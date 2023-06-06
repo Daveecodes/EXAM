@@ -1,3 +1,109 @@
 .header{
     position: relative;
+
+    &_content{
+        @include flex(center,center);
+        gap: 131px;
+
+        @include media(1130){
+            gap: 40px;
+        }
+    }
+
+    &_burger{
+        padding: 12px 10px;
+        background-color: $main;
+        border-radius: 8px;
+        color: #FFFFFF;
+        border: none;
+        fill: $black;
+        display: none;
+        @include media(970){
+            display: block;
+        }
+    }
+
+    &_navbar{
+        @include flex(center,center);
+        gap: 48px;
+
+        @include media(1050){
+            gap: 25px;
+        }
+
+        @include media(970){
+            display: none;
+        }
+
+    }
+
+    &_link{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #8D8C8B;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            color: $black;
+        }
+    }
+
+    &_row{
+        padding-top: 10px;
+        @include flex(center,space-between);
+        padding-bottom: 10px;
+        border-bottom:1px solid #8D8C8B ;
+    }
+
+    &_buttons{
+        @include flex(center,center);
+        gap: 12px;
+
+    }
+
+    &_button{
+        padding: 18px 36px;
+        background-color: $main;
+        border-radius: 8px;
+        color: #FFFFFF;
+        border: 1px solid $main;
+        transition: all 0.3s ease-in-out;
+
+        @include media(970){
+            padding: 12px 25px;
+
+        }
+
+
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $main;
+            color: $main;
+        }
+
+        &_text{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &_choose{
+            padding: 18px 26px;
+            @include flex(center,center);
+            gap: 8px;
+            background-color: transparent;
+            border: 1px solid #555351;
+            color: #555351;
+
+            @include media(970){
+                display: none;
+            }
+
+            &:hover{
+                color: #555351;
+            }
+
+        }
+    }
 }

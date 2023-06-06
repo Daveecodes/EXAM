@@ -26,7 +26,7 @@ html, body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  font-family: Inter, sans-serif;
+  font-family: Geologica, sans-serif;
   font-style: normal;
   font-size: 14px;
   font-weight: normal;
@@ -39,13 +39,124 @@ html, body {
 
 .container {
   widows: 100%;
-  max-width: 1150px;
+  max-width: 1450px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
 .header {
   position: relative;
+}
+.header_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 131px;
+}
+@media screen and (max-width: 1130px) {
+  .header_content {
+    gap: 40px;
+  }
+}
+.header_burger {
+  padding: 12px 10px;
+  background-color: #FF8541;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: none;
+  fill: #000;
+  display: none;
+}
+@media screen and (max-width: 970px) {
+  .header_burger {
+    display: block;
+  }
+}
+.header_navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+}
+@media screen and (max-width: 1050px) {
+  .header_navbar {
+    gap: 25px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .header_navbar {
+    display: none;
+  }
+}
+.header_link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8D8C8B;
+  transition: all 0.3s ease-in-out;
+}
+.header_link:hover {
+  color: #000;
+}
+.header_row {
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #8D8C8B;
+}
+.header_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.header_button {
+  padding: 18px 36px;
+  background-color: #FF8541;
+  border-radius: 8px;
+  color: #FFFFFF;
+  border: 1px solid #FF8541;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 970px) {
+  .header_button {
+    padding: 12px 25px;
+  }
+}
+.header_button:hover {
+  background-color: transparent;
+  border: 1px solid #FF8541;
+  color: #FF8541;
+}
+.header_button_text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+.header_button_choose {
+  padding: 18px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: transparent;
+  border: 1px solid #555351;
+  color: #555351;
+}
+@media screen and (max-width: 970px) {
+  .header_button_choose {
+    display: none;
+  }
+}
+.header_button_choose:hover {
+  color: #555351;
+}
+
+.banner {
+  position: relative;
+  margin-top: 100px;
 }
 
 .footer {
