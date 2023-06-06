@@ -2,5 +2,74 @@
     position: relative;
     margin-top: 100px;
 
+    @include media(1000){
+        margin-top: 30px;
+    }
     
+
+
+    &_image{
+        position:relative;
+
+
+        & img{
+            width: 100%;
+        }
+      
+
+      
+     
+    }
+
+  
+
+
+    &_text{
+        @include flex(start,unset);
+        gap: 30px;
+        flex-direction: column;
+        position: absolute;
+        left: 1;
+        bottom: 0;
+        padding: 70px;
+        @include media(830){
+            padding: 25px;
+        }
+    }
+
+    &_title{
+        font-weight: 400;
+        line-height: 80px;
+        color: #FFFFFF;
+        @include adaptive-value('font-size',64,34);
+
+        @include media(970){
+            display: none;
+        }
+    }
+
+    &_subtitle{
+        font-weight: 400;
+        line-height: 30px;
+        color: #FFFFFF;
+        @include adaptive-value('font-size',25,20);
+    }
+
+    &_subdesc{
+        @include flex(center,center);
+        gap: 25px
+    }
+
+    &_button{
+        @include flex(center,center);
+        width: 64px;
+        height: 64px;
+        border: 1px solid $white;
+        background-color: transparent;
+        border-radius: 50%;
+
+        @include media(830){
+            display: none;
+        }
+    }
 }
