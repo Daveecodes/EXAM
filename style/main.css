@@ -321,6 +321,11 @@ html, body {
   gap: 40px;
   padding-right: 60px;
 }
+@media screen and (max-width: 1300px) {
+  .contact_content {
+    padding-right: 0;
+  }
+}
 .contact_row {
   display: flex;
   align-items: center;
