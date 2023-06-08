@@ -229,6 +229,16 @@ html, body {
   border: 1px solid #fff;
   background-color: transparent;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.banner_button:hover {
+  background-color: #fff;
+}
+.banner_button svg path {
+  transition: all 0.3s ease-in-out;
+}
+.banner_button:hover svg path {
+  stroke: #000;
 }
 @media screen and (max-width: 830px) {
   .banner_button {
@@ -298,6 +308,7 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+  padding-right: 60px;
 }
 .contact_row {
   display: flex;

@@ -15,9 +15,6 @@
         & img{
             width: 100%;
         }
-      
-
-      
      
     }
 
@@ -67,6 +64,20 @@
         border: 1px solid $white;
         background-color: transparent;
         border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+
+        &:hover{
+            background-color: $white;
+        }
+
+        & svg path{
+            transition: all 0.3s ease-in-out;
+
+        }
+
+        &:hover svg path{
+            stroke: $black;
+        }
 
         @include media(830){
             display: none;
