@@ -100,8 +100,16 @@
                 display: none;
             }
 
+            & svg path{
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover svg path{
+                stroke: $main;
+            }
+
             &:hover{
-                color: #555351;
+                color: $main;
             }
 
         }
