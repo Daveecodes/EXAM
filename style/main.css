@@ -259,6 +259,11 @@ html, body {
 .contact {
   margin-top: 100px;
 }
+@media screen and (max-width: 800px) {
+  .contact {
+    margin-top: 30px;
+  }
+}
 .contact_button {
   display: flex;
   align-items: end;
