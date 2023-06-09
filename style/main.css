@@ -252,6 +252,14 @@ html, body {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
+.banner_button_button {
+  border: 1px solid #000;
+}
+@media screen and (max-width: 830px) {
+  .banner_button_button {
+    display: block;
+  }
+}
 .banner_button:hover {
   background-color: #fff;
 }
@@ -536,6 +544,9 @@ html, body {
   color: #FF8541;
 }
 
+.aricles {
+  margin-top: 50px;
+}
 .aricles_row {
   display: flex;
   align-items: start;
@@ -554,6 +565,9 @@ html, body {
   .aricles_content {
     margin-top: 20px;
   }
+}
+.aricles_all {
+  display: flex;
 }
 .aricles_top {
   display: flex;
@@ -581,10 +595,20 @@ html, body {
   display: none;
   background-color: #F9F8F6;
 }
+.aricles_mobile_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 @media screen and (max-width: 685px) {
   .aricles_mobile {
     display: block;
   }
+}
+.aricles_mobile_all {
+  display: block;
+  margin-top: 30px;
 }
 .aricles_mobile_image img {
   width: 100%;
@@ -643,4 +667,4 @@ html, body {
   .aricles_text {
     padding: 24px 30px 28px 24px;
   }
-}/*# sourceMappingURL=main.css.map */
+}

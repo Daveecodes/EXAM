@@ -1,4 +1,5 @@
 .aricles{
+    margin-top: 50px;
 
 
     &_row{
@@ -17,6 +18,10 @@
             margin-top: 20px
         }
         
+    }
+
+    &_all{
+        display: flex;
     }
 
     &_top{
@@ -43,8 +48,20 @@
         background-color: $background;
 
 
+        &_buttons{
+            @include flex(center,center);
+            gap: 12px;
+
+        }
+
+
         @include media(685){
             display: block;
+        }
+
+        &_all{
+            display: block;
+            margin-top: 30px;
         }
 
         &_image{
