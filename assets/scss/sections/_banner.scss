@@ -1,6 +1,7 @@
 .banner{
     position: relative;
     margin-top: 100px;
+    margin-bottom: 74px;
 
     @include media(1000){
         margin-top: 30px;

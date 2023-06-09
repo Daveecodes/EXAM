@@ -1,0 +1,57 @@
+.description{
+    margin-top: 80px;
+
+
+
+    &_row{
+        @include flex(start,unset);
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    &_content{
+        @include flex(center,center);
+        gap: 24px;
+
+        @include media(1450){
+            flex-wrap: wrap;
+        }
+    }
+
+    &_image{
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &_panel{
+        position: relative;
+    }
+
+    &_text{
+        padding: 24px 27px;
+        position: absolute;
+        bottom: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+    }
+
+
+
+    &_title{
+        @include flex(center,space-between);
+        font-weight: 600;
+        line-height: 47px;
+        @include adaptive-value('font-size',29,25);
+        
+    }
+
+    &_marked{
+        color: $main;
+    }
+}

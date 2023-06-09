@@ -1,3 +1,123 @@
 .footer{
      position: relative;
+     background-color: $background;
+     border-top: 1px solid #c2c1bf;
+     margin-top: 80px;
+
+
+     &_row{
+          @include flex(start,unset);
+          gap: 125px;
+          padding: 60px 0 100px 0;
+
+          @include media(1435){
+               gap: 100px;
+          }
+
+          @include media(1335){
+               gap: 80px;
+          }
+
+          @include media(1260){
+               gap: 60px;
+          }
+
+          @include media(1180){
+               gap: 50px;
+          }
+
+          
+          @include media(1100){
+               gap: 80px
+          }
+
+          @include media(985){
+               gap: 60px;
+          }
+
+          @include media(925){
+               gap: 50px;
+          }
+
+
+          @include media(900){
+               @include flex(center,center);
+               flex-direction: column;
+               gap: 33px;
+               padding: 24px 0 36px 0;
+          }
+
+     }
+
+     &_social{
+          @include flex(center,start);
+          flex-direction: column;
+          gap: 20px;
+
+
+          &_icons{
+               @include flex(center,center);
+               gap: 6px;
+          }
+     }
+
+
+     &_contact{
+          @include flex(start,unset);
+          flex-direction: column;
+          gap: 16px;
+
+
+          &_panel{
+               @include flex(center,center);
+               gap: 13px;
+          }
+     }
+
+     &_location{
+          @include flex(start,unset);
+          flex-direction: column;
+          gap: 13px;
+
+          
+          @include media(1100){
+               display: none;
+          }
+
+
+          &_button{
+               @include flex(center,center);
+               width: 142px;
+               height: 43px;
+               border-radius: 16px;
+               border-color: $white;
+               gap: 9px;
+          }
+     }
+
+     &_company{
+          @include flex(center,center);
+          width: 246px;
+          height: 57px;
+          background-color: white;
+          border-radius: 16px;
+          gap: 12px;
+
+
+          &_text{
+               font-weight: 400;
+               font-size: 12px;
+               line-height: 14px;
+               color: #000000;
+          }
+     }
+
+
+     &_title{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 30px;
+          color: $black;
+     }
+
 }

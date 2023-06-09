@@ -1,5 +1,7 @@
 .header{
     position: relative;
+    border-bottom:1px solid #c2c1bf;
+
 
     &_content{
         @include flex(center,center);
@@ -53,7 +55,6 @@
         padding-top: 10px;
         @include flex(center,space-between);
         padding-bottom: 10px;
-        border-bottom:1px solid #c2c1bf;
     }
 
     &_buttons{
@@ -70,10 +71,29 @@
         border: 1px solid $main;
         transition: all 0.3s ease-in-out;
 
-        @include media(970){
-            padding: 12px 25px;
+        &_button{
+            padding: 18px 26px;
+            @include flex(center,center);
+            gap: 8px;
+            background-color: transparent;
+            border: 1px solid #555351;
+            color: #555351;
 
+           
+
+            & svg path{
+                transition: all 0.3s ease-in-out;
+            }
+
+            &:hover svg path{
+                stroke: $main;
+            }
+
+            &:hover{
+                color: $main;
+            }
         }
+
 
 
         &:hover{
