@@ -561,6 +561,9 @@ html, body {
   color: #FF8541;
 }
 
+.aricles {
+  margin-top: 50px;
+}
 .aricles_row {
   display: flex;
   align-items: start;
@@ -597,6 +600,9 @@ html, body {
     align-items: center;
     justify-content: center;
   }
+}
+.aricles_all {
+  display: flex;
 }
 .aricles_top {
   display: flex;
