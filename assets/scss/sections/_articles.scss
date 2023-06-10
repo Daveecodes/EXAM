@@ -33,6 +33,7 @@
         border-radius: 50%;
 
 
+
           @include media(685){
               @include flex(center,center);
 
@@ -81,6 +82,9 @@
         &_buttons{
             @include flex(center,center);
             gap: 12px;
+            transition: all 0.3s ease-in-out;
+
+         
 
         }
 
