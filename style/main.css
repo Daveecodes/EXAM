@@ -252,6 +252,7 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 .banner_button_button {
+  display: none;
   border: 1px solid #000;
 }
 @media screen and (max-width: 830px) {
@@ -561,6 +562,9 @@ html, body {
   color: #FF8541;
 }
 
+.aricles {
+  margin-top: 50px;
+}
 .aricles_row {
   display: flex;
   align-items: start;
@@ -597,6 +601,9 @@ html, body {
     align-items: center;
     justify-content: center;
   }
+}
+.aricles_all {
+  display: flex;
 }
 .aricles_top {
   display: flex;
