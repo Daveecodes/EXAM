@@ -252,7 +252,6 @@ html, body {
   transition: all 0.3s ease-in-out;
 }
 .banner_button_button {
-  display: none;
   border: 1px solid #000;
 }
 @media screen and (max-width: 830px) {
