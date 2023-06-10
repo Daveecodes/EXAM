@@ -39,6 +39,10 @@
           }
     }
 
+    &_all{
+        display: flex;
+    }
+
     &_top{
         @include flex(center,unset);
         gap: 24px;
@@ -88,10 +92,13 @@
         &_all{
             display: block;
             margin-top: 30px;
+<<<<<<< HEAD
 
                @include media(685){
                 display: none;
         }
+=======
+>>>>>>> b2013316432f16d443242b5e92ef58277a838064
         }
 
         &_image{

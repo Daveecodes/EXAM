@@ -251,6 +251,14 @@ html, body {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
+.banner_button_button {
+  border: 1px solid #000;
+}
+@media screen and (max-width: 830px) {
+  .banner_button_button {
+    display: block;
+  }
+}
 .banner_button:hover {
   background-color: #fff;
 }
@@ -553,9 +561,6 @@ html, body {
   color: #FF8541;
 }
 
-.aricles {
-  margin-top: 50px;
-}
 .aricles_row {
   display: flex;
   align-items: start;

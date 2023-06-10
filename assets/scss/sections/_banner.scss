@@ -67,6 +67,15 @@
         border-radius: 50%;
         transition: all 0.3s ease-in-out;
 
+        &_button{
+            border: 1px solid $black;
+
+            @include media(830){
+                display: block;
+            }
+
+        }
+
         &:hover{
             background-color: $white;
         }
