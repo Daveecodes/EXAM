@@ -15,6 +15,13 @@
 
         @include media(1450){
             flex-wrap: wrap;
+            flex: 1 1 auto;
+
+        }
+
+          @include media(685){
+            @include flex(center,center);
+
         }
     }
 
@@ -29,7 +36,9 @@
 
     &_panel{
         position: relative;
+
     }
+
 
     &_text{
         padding: 24px 27px;
@@ -48,7 +57,7 @@
         font-weight: 600;
         line-height: 47px;
         @include adaptive-value('font-size',29,25);
-        
+
     }
 
     &_marked{

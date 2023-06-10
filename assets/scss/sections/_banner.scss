@@ -6,7 +6,7 @@
     @include media(1000){
         margin-top: 30px;
     }
-    
+
 
 
     &_image{
@@ -16,10 +16,10 @@
         & img{
             width: 100%;
         }
-     
+
     }
 
-  
+
 
 
     &_text{
@@ -27,9 +27,9 @@
         gap: 30px;
         flex-direction: column;
         position: absolute;
-        left: 1;
         bottom: 0;
         padding: 70px;
+
         @include media(830){
             padding: 25px;
         }

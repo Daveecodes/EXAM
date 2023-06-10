@@ -197,7 +197,6 @@ html, body {
   gap: 30px;
   flex-direction: column;
   position: absolute;
-  left: 1;
   bottom: 0;
   padding: 70px;
 }
@@ -373,6 +372,11 @@ html, body {
   border-color: #fff;
   gap: 9px;
 }
+.footer_location_button_button {
+  background-color: transparent;
+  width: 110px;
+  height: 43px;
+}
 .footer_company {
   display: flex;
   align-items: center;
@@ -398,6 +402,11 @@ html, body {
 
 .contact {
   margin-top: 100px;
+}
+@media screen and (max-width: 685px) {
+  .contact {
+    display: none;
+  }
 }
 @media screen and (max-width: 800px) {
   .contact {
@@ -497,6 +506,14 @@ html, body {
 @media screen and (max-width: 1450px) {
   .description_content {
     flex-wrap: wrap;
+    flex: 1 1 auto;
+  }
+}
+@media screen and (max-width: 685px) {
+  .description_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .description_image {
@@ -536,6 +553,9 @@ html, body {
   color: #FF8541;
 }
 
+.aricles {
+  margin-top: 50px;
+}
 .aricles_row {
   display: flex;
   align-items: start;
@@ -553,6 +573,24 @@ html, body {
 @media screen and (max-width: 685px) {
   .aricles_content {
     margin-top: 20px;
+  }
+}
+.aricles_all {
+  display: flex;
+}
+.aricles_button {
+  display: none;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #000;
+  background-color: transparent;
+  border-radius: 50%;
+}
+@media screen and (max-width: 685px) {
+  .aricles_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .aricles_top {
@@ -577,13 +615,37 @@ html, body {
     flex-direction: column;
   }
 }
+.aricles_mob {
+  display: none;
+}
+@media screen and (max-width: 685px) {
+  .aricles_mob {
+    display: block;
+    margin-top: 30px;
+  }
+}
 .aricles_mobile {
   display: none;
   background-color: #F9F8F6;
 }
+.aricles_mobile_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 @media screen and (max-width: 685px) {
   .aricles_mobile {
     display: block;
+  }
+}
+.aricles_mobile_all {
+  display: block;
+  margin-top: 30px;
+}
+@media screen and (max-width: 685px) {
+  .aricles_mobile_all {
+    display: none;
   }
 }
 .aricles_mobile_image img {
@@ -643,4 +705,120 @@ html, body {
   .aricles_text {
     padding: 24px 30px 28px 24px;
   }
+}
+
+.programs {
+  margin-bottom: 80px;
+}
+.programs_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+}
+.programs_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.programs_panel {
+  position: relative;
+}
+.programs_image {
+  position: relative;
+}
+.programs_image img {
+  width: 100%;
+}
+.programs_text {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  padding: 0 24px 20px 24px;
+}
+.programs_title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+.programs_subtitle {
+  color: #fff;
+  font-weight: 100;
+}
+.programs_subdesc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+.programs_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media screen and (max-width: 1400px) {
+  .programs_bottom {
+    flex-wrap: wrap;
+  }
+}
+
+.about {
+  margin-top: 60px;
+}
+.about_row {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  padding: 48px;
+  background-color: #F9F8F6;
+  border-radius: 26px;
+  margin-top: 50px;
+}
+@media screen and (max-width: 1450px) {
+  .about_row {
+    padding: calc(
+           10px + 38 * ((100vw - 32px) / 1130));
+  }
+}
+@media screen and (max-width: 970px) {
+  .about_row {
+    flex-direction: column;
+  }
+}
+.about_content {
+  width: 50%;
+}
+@media screen and (max-width: 970px) {
+  .about_content {
+    width: 100%;
+  }
+}
+.about_title {
+  font-weight: 600;
+  line-height: 37px;
+  color: #FF8541;
+  font-size: 31px;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1450px) {
+  .about_title {
+    font-size: calc(
+           20px + 11 * ((100vw - 32px) / 1130));
+  }
+}
+.about_desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #555351;
+  margin-bottom: 59px;
 }/*# sourceMappingURL=main.css.map */

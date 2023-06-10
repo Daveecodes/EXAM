@@ -1,0 +1,45 @@
+.about{
+  margin-top:60px;
+
+  &_row{
+    width: 100%;
+    @include flex(start,space-between);
+    @include adaptive-value('padding',48,10);
+    background-color: $background;
+    border-radius: 26px;
+    margin-top: 50px;
+
+    @include media (970){
+      flex-direction: column;
+    }
+
+  }
+
+
+  &_content{
+    width: 50%;
+
+     @include media (970){
+      width: 100%;
+    }
+  }
+
+  &_title{
+    font-weight: 600;
+    line-height: 37px;
+    color: #FF8541;
+    @include adaptive-value('font-size',31,20);
+    margin-bottom: 30px;
+  }
+
+  &_desc{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #555351;
+    margin-bottom: 59px;
+  }
+
+
+
+}
